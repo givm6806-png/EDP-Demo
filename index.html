@@ -113,9 +113,19 @@
 
   <div class="demo-strip"><span class="demo-dot"></span>Demo website · cole aqui o snippet do Genesys Cloud Messenger</div>
 
-  <!-- COLE AQUI O SNIPPET REAL DO GENESYS CLOUD MESSENGER, normalmente antes de </body>.
-       Exemplo de estrutura (nao funcional sem os valores da sua org):
-       <script src="...Genesys Cloud Messenger deployment URL..."></script>
-       O resto da pagina nao precisa de ser alterado. -->
+<script type="text/javascript" charset="utf-8">
+  (function (g, e, n, es, ys) {
+    g['_genesysJs'] = e;
+    g[e] = g[e] || function () {
+      (g[e].q = g[e].q || []).push(arguments)
+    };
+    g[e].t = 1 * new Date();
+    g[e].c = es;
+    ys = document.createElement('script'); ys.async = 1; ys.src = n; ys.charset = 'utf-8'; document.head.appendChild(ys);
+  })(window, 'Genesys', 'https://apps.mypurecloud.ie/genesys-bootstrap/genesys.min.js', {
+    environment: 'prod-euw1',
+    deploymentId: '53cd408f-b175-49c6-be2a-e297f324c544'
+  });
+</script>
 </body>
 </html>
